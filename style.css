@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.header {
+    background: rgb(246, 206, 5);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo {
+    width: 80px;
+    cursor: pointer;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: azure;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+
+
+}
+
+nav ul li a:hover::after {
+    transform: scale(1);
+
+}
+
+#dropdown {
+    background: transparent;
+    border: none;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+option {
+    background: black;
+    color: white;
+    cursor: pointer;
+
+}
+
+option:hover {
+    background: rgb(245, 126, 15);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    /* background: url(images/main-hero.jpg) rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+
+}
+
+#bg {
+    width: 600px;
+
+
+}
+
+#main-text {
+    color: black;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+
+
+
+
+}
+
+#hero-btn {
+    color: #000;
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+    background: white;
+    transition: 0.2s ease-in-out;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 210px;
+
+
+
+}
+
+#hero-btn:hover {
+    border: 2px solid white;
+    background: black;
+    color: white;
+    transform: scale(0.9);
+
+}
+
+#read-btn {
+    color: #000;
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+    background: white;
+    transition: 0.2s ease-in-out;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+#read-btn:hover {
+    border: 2px solid white;
+    background: black;
+    color: white;
+    transform: scale(0.9);
+
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.side-img {
+    height: 400px;
+    width: 350px;
+}
+
+.feat-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    background-color: #000;
+}
+
+#featured-head {
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    cursor: pointer;
+
+}
+
+#featured-head::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    bottom: 0;
+    left: 45%;
+    background-color: black;
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
+
+
+}
+
+.item-li {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.item-li:hover {
+    transform: scale(1.05);
+}
+
+.item-details {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+    margin-Bottom: 50px;
+}
+
+.Category {
+    font-size: 20px;
+}
+
+.Category h2 {
+    text-align: center;
+}
+
+.foot-text p {
+    font-weight: 700;
+    text-align: center;
+}
+
+.foot-links {
+    display: inline;
+
+}
+
+.socail-links {
+    width: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+
+
+
+}
+
+.about-main {
+    width: 100%;
+    height: 60vh;
+    background: url(images/about-banner.jpg);
+    background-position: center -380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+
+}
+
+#Habout {
+    color: black;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+
+
+}
+
+.about-text p {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-cont {
+    width: 500px;
+    height: 480px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.about-text-c {
+    width: 500px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
